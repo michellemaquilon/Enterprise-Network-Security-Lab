@@ -1,121 +1,120 @@
-# Enterprise-Network-Security-Lab
 
-Project Overview
+# Enterprise Network Security Lab
 
-This project simulates an enterprise network environment using Cisco Packet Tracer. The goal is to practice networking, infrastructure administration, and network security through hands-on configuration and testing.
+**Networking | Infrastructure | Cybersecurity**
 
-Objectives
+## Project Overview
 
-Design an enterprise network topology.
+This project simulates an enterprise network environment using **Cisco Packet Tracer**. The goal is to practice network configuration, infrastructure administration, and security through hands-on implementation and testing.
 
-Configure VLANs and inter-VLAN routing.
+## Project Objectives
 
-Implement DHCP for network addressing.
+- Design an enterprise network topology.
+- Configure VLANs and trunking.
+- Implement inter-VLAN routing.
+- Configure DHCP for IP address assignment.
+- Implement Access Control Lists (ACLs).
+- Configure secure remote management using SSH.
+- Implement NAT/PAT.
+- Configure a DMZ web server.
+- Test connectivity and troubleshoot network issues.
+- Document security controls and incident response procedures.
 
-Apply Access Control Lists (ACLs) to restrict network traffic.
+## Technologies Used
 
-Configure secure remote management using SSH.
+- **Cisco Packet Tracer**
+- **Cisco IOS CLI**
+- **VLANs and Trunking**
+- **Inter-VLAN Routing**
+- **DHCP**
+- **Access Control Lists (ACLs)**
+- **SSH**
+- **NAT/PAT**
+- **DMZ Architecture**
+- **GitHub Markdown**
 
-Implement NAT/PAT and static NAT.
+## Network Design
 
-Host and test a web server in a DMZ.
+The network is designed to separate devices and services into different VLANs to improve organization and security.
 
-Practice troubleshooting and incident response.
+| VLAN | Purpose |
+|---|---|
+| VLAN 10 | Users |
+| VLAN 20 | IT |
+| VLAN 30 | Security |
+| VLAN 40 | Guest |
+| VLAN 50 | Servers |
+| VLAN 60 | DMZ |
+| VLAN 99 | Management |
 
-Technologies Used
+**IP Addressing:** The lab uses the `10.10.x.0/24` addressing scheme for internal VLANs.
 
-Cisco Packet Tracer
+## Network Topology
 
-Cisco IOS CLI
+The network consists of routers, switches, end devices, and servers connected to simulate an enterprise environment.
 
-VLANs and trunking
+![Enterprise Network Topology](screenshots/01-network-topology.png)
 
-Inter-VLAN routing
+## Security Controls
 
-DHCP
+The following security mechanisms are implemented and tested as part of the lab:
 
-Access Control Lists (ACLs)
+- **VLAN Segmentation:** Separates network devices and limits unnecessary communication.
+- **Access Control Lists (ACLs):** Restricts traffic based on defined security rules.
+- **SSH Management:** Enables secure remote administration of network devices.
+- **NAT/PAT:** Translates internal IP addresses for external connectivity.
+- **DMZ:** Isolates the public-facing web server from internal network resources.
 
-SSH
+## Configuration Evidence
 
-NAT/PAT
+Screenshots documenting the lab configuration and testing are organized below.
 
-DMZ architecture
+| Screenshot | Description |
+|---|---|
+| `01-network-topology.png` | Enterprise network topology |
+| `02-router-configuration.png` | Router configuration |
+| `03-vlan-trunking.png` | VLANs and trunking |
+| `04-acl-security.png` | Access control lists |
+| `05-ssh-management.png` | SSH configuration and testing |
+| `06-nat.png` | NAT configuration and translations |
+| `07-dmz-web-server.png` | DMZ web server and connectivity |
 
-GitHub Markdown documentation
+## Testing and Validation
 
-Network Design
+Network functionality is verified through configuration checks and connectivity tests.
 
-The simulated network uses multiple VLANs to separate different types of devices and services.
+- **Connectivity:** Verify communication between permitted devices.
+- **VLANs:** Confirm VLAN membership and trunk operation.
+- **ACLs:** Verify that permitted traffic succeeds and restricted traffic is blocked.
+- **SSH:** Test secure remote device management.
+- **NAT:** Verify address translation during network traffic.
+- **DMZ:** Test web server accessibility according to the configured security rules.
 
-VLAN
+## Incident Response
 
-Purpose
+The incident-response exercise will document the investigation and handling of a simulated network security incident.
 
-VLAN 10
+1. **Identification:** Detect and investigate suspicious network activity.
+2. **Containment:** Isolate affected devices or restrict suspicious traffic.
+3. **Investigation:** Review configurations, logs, and network connectivity.
+4. **Recovery:** Restore approved connectivity and validate network functionality.
+5. **Lessons Learned:** Document findings and recommend security improvements.
 
-Users
+## Documentation
 
-VLAN 20
+Detailed project documentation is available in the `documentation/` directory.
 
-IT
+- [Network Design](documentation/network-design.md)
+- [Security Controls](documentation/security-controls.md)
+- [Incident Response](documentation/incident-response.md)
 
-VLAN 30
+## Key Takeaways
 
-Security
+This project provides hands-on experience with **enterprise networking, network segmentation, security controls, troubleshooting, and technical documentation**.
 
-VLAN 40
+It demonstrates the process of designing, configuring, testing, and documenting a simulated enterprise network.
 
-Guest
+---
 
-VLAN 50
+**Project Status:** In Progress
 
-Servers
-
-VLAN 60
-
-DMZ
-
-VLAN 99
-
-Management
-
-The network uses the 10.10.x.0/24 addressing scheme for its internal VLANs.
-
-Security Controls
-
-VLAN segmentation to separate network traffic.
-
-ACLs to control communication between network segments.
-
-SSH for secure remote device administration.
-
-NAT/PAT for outbound network connectivity.
-
-A DMZ to isolate the public-facing web server from internal systems.
-
-Testing and Validation
-
-Testing includes connectivity checks, network configuration verification, and access testing.
-
-Evidence and results will be documented in the screenshots and documentation folders as the project progresses.
-
-Incident Response
-
-The incident-response portion of this project will simulate identifying suspicious activity, containing a compromised device, reviewing network access controls, and validating recovery.
-
-Project Structure
-
-screenshots/ — Visual evidence of network configurations and testing.
-
-documentation/network-design.md — Network architecture and IP addressing.
-
-documentation/security-controls.md — Security configurations and testing.
-
-documentation/incident-response.md — Incident scenario, containment, and recovery.
-
-Key Takeaways
-
-This project provides hands-on practice with enterprise networking, network segmentation, security controls, troubleshooting, and technical documentation.
-
-This documentation will be updated as additional configurations, tests, and incident-response activities are completed.
